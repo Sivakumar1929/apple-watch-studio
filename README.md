@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Apple Watch Studio Clone
 
-## Getting Started
+This project is a replica of the Apple Watch Studio, built with **Next.js**, **TypeScript**, and **Tailwind CSS**. It provides an interactive UI for customizing Apple Watch models, including watch faces and case options. The project is optimized for performance, accessibility, and responsive design, ensuring a smooth experience on desktop, tablet, and mobile devices.
 
-First, run the development server:
+## Features
 
-```bash
+- **Pixel-Perfect Precision**: Replicates the Apple Watch Studio's aesthetic, including fonts, spacing, colors, and animations.
+- **Interactive and Responsive**: Fully responsive design that works on desktop, tablet, and mobile devices.
+- **High Performance**: Fast loading times and smooth interactions.
+- **Accessibility**: Implements accessible design principles, such as ARIA roles and keyboard navigation.
+- **Customizable Watch Studio**: Users can select different watch cases and watch faces, previewing their customizations in real time.
+
+## Prerequisites
+
+Before running the project locally, make sure you have the following installed:
+
+- **Node.js** (version 16.x or higher)
+- **npm** or **yarn**
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Sivakumar1929/apple-watch-studio.git
+   cd apple-watch-studio
+2. Install dependencies:
+
+bash
+Copy code
+npm install
+# or
+yarn install
+
+3. Run the development server:
+
+bash
+Copy code
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Cofig
+  module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'img.freepik.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'store.storeimages.cdn-apple.com',
+        pathname: '/**',
+      },
+    ],
+  },
+};
