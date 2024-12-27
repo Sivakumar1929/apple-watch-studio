@@ -1,0 +1,24 @@
+.background-bands {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .move-background {
+    animation: moveBackground 10s linear infinite;
+  }
+  
+  .stop-moving {
+    animation: none;
+  }
+  
+  @keyframes moveBackground {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
